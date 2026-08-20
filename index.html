@@ -4,154 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jose Mourinho | Соцсети</title>
-    <!-- Мета-теги для соцсетей (превью при отправке ссылки) -->
     <meta property="og:title" content="Jose Mourinho | Соцсети">
     <meta property="og:description" content="Мой Telegram-канал и TikTok">
     <meta property="og:type" content="website">
-    <!-- Favicon (иконка вкладки) -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
-    <!-- Шрифт -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', sans-serif;
             background: radial-gradient(circle at top left, #1a1a2e, #0f0f1a);
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            color: #ffffff;
+            min-height: 100vh; display: flex; justify-content: center; align-items: center;
+            padding: 20px; color: #ffffff;
         }
-
         .profile-card {
-            max-width: 450px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.06);
-            backdrop-filter: blur(12px);
-            border-radius: 24px;
-            padding: 40px 30px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-            text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: all 0.3s;
+            max-width: 450px; width: 100%; background: rgba(255,255,255,0.06);
+            backdrop-filter: blur(12px); border-radius: 24px; padding: 40px 30px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4); text-align: center;
+            border: 1px solid rgba(255,255,255,0.1); transition: all 0.3s;
         }
-
-        /* АВАТАР С ИНИЦИАЛАМИ (автоматически) */
         .avatar-placeholder {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            background: linear-gradient(135deg, #4f8cf7, #8b5cf6);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 48px;
-            font-weight: 700;
-            color: white;
-            box-shadow: 0 0 25px rgba(79, 140, 247, 0.5);
-            border: 3px solid rgba(255, 255, 255, 0.4);
+            width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 20px;
+            background: linear-gradient(135deg, #4f8cf7, #8b5cf6); display:flex;
+            align-items:center; justify-content:center; font-size:48px; font-weight:700;
+            color:white; box-shadow: 0 0 25px rgba(79,140,247,0.5);
+            border: 3px solid rgba(255,255,255,0.4);
         }
-
-        .name {
-            font-size: 28px;
-            font-weight: 700;
-            margin-bottom: 8px;
-        }
-
-        .bio-text {
-            font-size: 16px;
-            color: #c0c0d0;
-            margin-bottom: 30px;
-        }
-
-        .links {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
+        .name { font-size:28px; font-weight:700; margin-bottom:8px; }
+        .bio-text { font-size:16px; color:#c0c0d0; margin-bottom:30px; }
+        .links { display:flex; flex-direction:column; gap:15px; }
         .link-btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            padding: 14px 20px;
-            border-radius: 16px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 600;
-            transition: transform 0.2s, box-shadow 0.2s;
-            color: white;
-            cursor: pointer;
-            border: none;
+            display:flex; align-items:center; justify-content:center; gap:12px;
+            padding:14px 20px; border-radius:16px; text-decoration:none;
+            font-size:18px; font-weight:600; transition: transform .2s, box-shadow .2s;
+            color:white; cursor:pointer; border:none;
         }
-
-        .link-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-        }
-
-        .telegram {
-            background: linear-gradient(135deg, #2AABEE, #229ED9);
-        }
-
-        .tiktok {
-            background: linear-gradient(135deg, #010101, #69C9D0);
-        }
-
-        /* SVG-иконки */
-        .icon {
-            width: 24px;
-            height: 24px;
-            flex-shrink: 0;
-        }
-
-        .footer {
-            margin-top: 30px;
-            font-size: 14px;
-            color: #808090;
-        }
+        .link-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.4); }
+        .telegram { background: linear-gradient(135deg, #2AABEE, #229ED9); }
+        .tiktok { background: linear-gradient(135deg, #010101, #69C9D0); }
+        .icon { width:24px; height:24px; flex-shrink:0; display:inline-block; }
+        .footer { margin-top:30px; font-size:14px; color:#808090; }
     </style>
 </head>
 <body>
     <div class="profile-card">
-        <!-- АВАТАР: показывает первые буквы имени (JM), если хотите своё фото, замените этот блок на <img src="..."> -->
         <div class="avatar-placeholder">JM</div>
-
-        <!-- ЗАМЕНИТЕ ИМЯ И ОПИСАНИЕ ПРИ ЖЕЛАНИИ -->
         <h1 class="name">Jose Mourinho</h1>
         <p class="bio-text">Привет! Подписывайся на мой приватный Telegram и TikTok 😎</p>
 
-        <!-- КНОПКИ -->
         <div class="links">
             <a class="link-btn telegram" href="https://t.me/+7cLiJdIsAN8yNTIy" target="_blank" rel="noopener">
-                <!-- Иконка Telegram (SVG) -->
-                <svg class="icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295-.393 0-.32-.148-.451-.524l-2.107-6.93c-.14-.432.027-.666.472-.666l9.52-3.666c.423-.162.645.104.535.617z"/>
+                <!-- Простейшая корректная иконка Telegram (paper plane) -->
+                <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white" aria-hidden="true">
+                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.18 7.58l-1.56 7.35c-.11.51-.4.64-.86.4l-2.73-1.99-1.25 1.2c-.14.14-.26.26-.56.26-.1 0-.19-.02-.28-.07-.28-.14-.49-.43-.38-.69l.68-3.11L17.6 8c.35-.32-.07-.5-.54-.18L7.9 13.1c-.49.3-.5.3-.84.1-.34-.2-.57-.62.01-.93L17.6 7.42c.46-.23.86-.09 1.2.16.35.25.46.59.2.84z"/>
                 </svg>
                 Telegram-канал
             </a>
 
             <a class="link-btn tiktok" href="https://www.tiktok.com/@jose_mourinho108" target="_blank" rel="noopener">
-                <!-- Иконка TikTok (SVG) -->
-                <svg class="icon" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.66 1.94 2.89 2.89 0 0 1 5.66-1.94v-3.4a6.6 6.6 0 0 0-5.66 1.94 6.6 6.6 0 0 0 5.66-1.94V2.4a6.6 6.6 0 0 1 6.77 6.29v3.45z"/>
+                <!-- Простая иконка ноты вместо полного сложного логотипа TikTok -->
+                <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="white" aria-hidden="true">
+                    <path d="M12 3v8.2A3.8 3.8 0 1 1 9.2 7H11V3h1zM6 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
                 </svg>
                 TikTok
             </a>
         </div>
 
-        <div class="footer">
-            Свяжитесь со мной в соцсетях
-        </div>
+        <div class="footer">Свяжитесь со мной в соцсетях</div>
     </div>
 </body>
 </html>
