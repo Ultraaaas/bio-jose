@@ -1,6 +1,6 @@
 # bio-jose
 
-Личный сайт Jose Mourinho с ссылками на социальные сети.
+Сайт Jose Mourinho.
 
 ## 📱 Что это?
 
